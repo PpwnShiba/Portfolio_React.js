@@ -1,0 +1,256 @@
+.java, .mobileapp, .webapp, .activities, .predict{
+    height: 100vh;
+    display: flex;
+}
+.java-left, .mobileapp-left, .webapp-left, .activities-left, .java-right, .mobileapp-right, .webapp-right, .activities-right, .predict-right, .predict-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.java-wrapper, .mobileapp-wrapper, .webapp-wrapper, .activities-wrapper, .predict-wrapper{
+    padding: 50px;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.java-img, .mobileapp-img, .webapp-img, .activities-img, .predict-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mobileapp, .java, .webapp, .activities, .predict{
+    background-color: #1A1A1A;
+    color: white;  
+}
+
+.java .java-right h1{
+    background-color: #972529;
+    width: 620px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+.java-right h2{
+    background-color:white ;
+    color: #1A1A1A;
+    font-weight: 600;
+    width: 500px;
+    padding-left: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 120px;
+    margin-top: 10px;
+}
+.java-right h3{
+    color: #972529;
+    font-weight: 600;
+}
+.java-right .desc{
+    color: white;
+}
+
+.webapp-right h1{
+    background-color: #06AA6D;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.webapp-right h3{
+    color: #06AA6D;
+    font-weight: 600;
+}
+
+.predict-left h1{
+    background-color: #3C4266;
+    width: 500px;
+    padding: 10px 100px;
+    font-weight: 600;
+}
+.predict h3{
+    font-weight: 600;
+    color: #3C4266;
+}
+
+.activities-right h1{
+    background-color: #5C3331;
+    font-weight: 600;
+    width: 600px;
+    padding: 10px 90px;
+}
+.activities-right h3{
+    color: #1A1A1A;
+    font-weight: 600;
+    background-color: white;
+    width: 500px;
+    padding: 10px 50px;
+    margin-left: 100px;
+}
+
+.mobileapp-left h1{
+    background-color: #4985EA;
+    width: 500px;
+    font-weight: 600;
+    padding-left: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.mobileapp-left h3{
+    color: #4985EA;
+    font-weight: 600;
+}
+
+@media screen and (max-width:480px) {
+    .java{
+        flex-direction: column;
+        text-align: center;
+        height: 110vh;
+    }
+
+    .java .java-img{
+        height: 60vh;
+    }
+    .java .java-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        vertical-align: top;
+        margin-bottom: 150px;
+    }
+    .java .java-right h1{
+        font-weight: 600;
+        font-size: 18px;
+        width: 300px;
+        padding-left: 30px;
+    }
+    .java .java-right h2{
+        font-size: 18px;
+        width: 300px;
+        padding-left: 40px;
+        margin-left: 50px;
+        margin-top: 5px;
+    }
+    .java-right h3{
+        font-size: 18px;
+    }
+    .java-right .desc{
+        font-size: 15px;
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+
+    .mobileapp{
+        flex-direction: column-reverse;
+        height: 100vh;
+    }
+    .mobileapp-img{
+        height: 50vh;
+    }
+    .mobileapp-wrapper{
+        padding: 10px;
+        align-items: left;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 50px;
+        padding: 30px;
+        /* margin-bottom: 250px; */
+    }
+    .mobileapp-left h1{
+        margin-top: 20px;
+        width: 300px;
+        margin-left: 20px;
+        font-size: 25px;
+        padding-left: 40px;
+    }
+    .mobileapp-left h3{
+        font-size: 18px;
+    }
+    .webapp{
+        flex-direction: column;
+        text-align: center;
+        height: 110vh;
+    
+    }
+    .webapp-wrapper{
+        align-items: left;
+        text-align: left;
+        justify-content:center;
+        height: 30vh;
+        padding: 30px;
+    }
+    .webapp-right h1{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .webapp-right h3{
+        font-size: 18px;
+    }
+    .webapp-img{
+        height: 60vh;
+    }
+    .predict{
+        
+        flex-direction: column-reverse;
+        text-align: center;
+        height: 110vh;
+
+    }
+    .predict-img{
+        width: 60vh;
+        
+    }
+    .predict-left h1{
+        font-size: 20px;
+        width:250px;
+        padding: 10px 50px;
+    }
+    .predict h3{
+        font-size: 18px;
+    }
+
+    .predict-wrapper{
+        padding: 10px;
+        align-items: left;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 100px;
+        padding: 30px;
+    }
+
+    .activities{
+        flex-direction: column;
+        text-align: left;
+        height: 110vh;
+    
+    }
+    .activities-right h1{
+        font-weight: 600;
+        font-size: 20px;
+        width: 300px;
+        padding: 10px 45px;
+    }
+    .activities-right h3{
+        width: 300px;
+        font-size: 18px;
+        padding: 10px 20px;
+        margin-left: 70px;
+        margin-top: 5px;
+    }
+    .activities-wrapper{
+        padding: 30px;
+        align-items: left;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+        margin-bottom: 100px;
+  
+    }
+}

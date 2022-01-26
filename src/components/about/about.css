@@ -1,0 +1,98 @@
+.about{
+    height: 100vh;
+    display: flex;
+}
+.about-left{
+    flex: 1;
+}
+.about-right{
+    flex: 1;
+}
+.about-image{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-right .about-wrapper{
+    padding: 50px;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.about-right .about-wrapper span{
+    padding-left: 50px;
+}
+
+.about-right .myname{
+    padding-left: 50px;
+}
+.about-right .icon{
+    font-size:23px;
+    margin-right: 5px;
+}
+
+.about .profile h2{
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: #972529;
+    width: 250px;
+    padding: 10px 70px;
+}
+.about-right .profile .name{
+    color: #972529;
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 10px;
+    display: inline;
+}
+
+.about .skills h2{
+    margin-top: 20px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: #3C4266;
+    width: 250px;
+    padding: 10px 80px;
+}
+.about .skills .name{
+    color: #3C4266;
+    font-size: 17px;
+    font-weight: 700;
+    padding-right: 10px;
+    display: inline;
+}
+
+.about .contact h2{
+    margin-top: 10px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    background-color: #06AA6D;
+    width: 250px;
+    padding: 10px 70px;
+}
+
+@media screen and (max-width:480px) {
+    .about{
+        flex-direction: column;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 150px;
+    }
+    .about-image{
+        display: none;
+    }
+    .about-wrapper{
+        font-size: 15px;
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+    }
+}

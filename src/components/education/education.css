@@ -1,0 +1,113 @@
+.education{
+    height: 100vh;
+    display: flex;
+    background-color: #191919;
+    color: white;
+}
+.education-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.education-right{
+    flex: 1;
+}
+.education-wrapper{
+    padding: 50px;
+    height: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.education .img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.education-line li { 
+    display: flex; 
+    color: #999;
+}
+.education-line .line { 
+    position: relative;
+    padding: 0 1.5em;  
+}
+.education-line .line::after { 
+    content: "";
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    transform: translateX(50%);
+    border-radius: 50%;
+    background:  #e67e22    ;
+    border: 1px  #e67e22    solid;
+    width: .8em;
+    height: .8em;
+}
+.education-line span {
+    padding: 0 1.5em 1.5em 1.5em;
+    position: relative;
+}
+.education-line span::before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    height: 100%;
+    border-left: 3px  #e67e22 solid;
+}
+
+.education .university{
+    padding-right: 33px;
+}
+.education .box{
+    /* background-color: #fff; */
+    color: #e67e22;
+    /* display: flex;
+    justify-content: center;
+    border-radius: 50px; */
+}
+.education .junior{
+    padding-right: 8px;
+}
+.education .se-name{
+    color: white;
+}
+/* .education .university .box{
+    padding: 10px 30px;
+}
+.education .junior .box, .education .senior .box{
+    padding: 10px 30px;
+} */ 
+
+.education-line { margin: 1em; width: 100%; }
+.education-line, 
+.education-line *::before, 
+.education-line *::after { box-sizing: border-box; }
+
+@media screen and (max-width:480px) {
+    .education{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .education-wrapper{
+        padding: 10px;
+        align-items: center;
+        text-align: left;
+        justify-content: center;
+        height: 100%;
+    }
+    .education .img{
+        height: 60vh;
+    }
+    .education .university{
+        padding-right: 60px;
+    }
+    .education .junior{
+        padding-right: 0px;
+    }
+}
